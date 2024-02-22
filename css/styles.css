@@ -90,7 +90,17 @@ body {
 
 /* #endregion general */
 
-/* #region logo (header and footer) */
+/* #region header */
+
+.header {
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+nav,
+address {
+  display: flex;
+}
 
 .logo {
   color: #4d5ae5;
@@ -113,20 +123,6 @@ body {
   line-height: 1.167;
   letter-spacing: 0.54px;
   text-transform: uppercase;
-}
-
-/* #endregion logo (header and footer) */
-
-/* #region header */
-
-.header {
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
-}
-
-nav,
-address {
-  display: flex;
 }
 
 .menu-nav .nav-button {
@@ -222,14 +218,25 @@ address {
     ),
     url(../images/hero-background.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
   background-position: center;
-  padding: 188px 0;
   max-width: 1440px;
   margin: 0 auto;
 }
 
+@media (min-resolution: 192dpi) {
+  .hero-section {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/hero-background@2.jpg");
+  }
+}
+
 .hero-section .container {
+  padding-top: 72px;
+  padding-bottom: 72px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -239,34 +246,62 @@ address {
 .main-title {
   color: #fff;
   text-align: center;
-  font-size: 56px;
+  font-size: 36px;
   font-weight: 700;
-  line-height: 1.07;
-  letter-spacing: 1.12px;
+  line-height: 111%;
+  letter-spacing: 0.02em;
   max-width: 496px;
-  height: 120px;
+  max-height: 120px;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 72px;
 }
 
 .order-button {
   background-color: #4d5ae5;
   font-size: 16px;
   font-weight: 500;
-  letter-spacing: 0.64px;
+  letter-spacing: 0.04em;
   line-height: 1.5;
   color: #fff;
   font-family: "Roboto", sans-serif;
   border-radius: 4px;
   padding: 16px 32px;
-  margin-top: 48px;
   min-width: 169px;
   height: 56px;
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.order-button:hover,
-.order-button:focus {
+.order-button:active {
   background-color: #404bbf;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-section .container {
+    padding-top: 112px;
+    padding-bottom: 112px;
+  }
+
+  .main-title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 107%;
+    letter-spacing: 0.02em;
+    text-transform: none;
+    margin-bottom: 36px;
+  }
+}
+
+@media only screen and (min-width: 1158px) {
+  .hero-section .container {
+    padding-top: 188px;
+    padding-bottom: 188px;
+  }
+
+  .order-button:hover,
+  .order-button:focus {
+    background-color: #404bbf;
+  }
 }
 
 /* #endregion hero section */
@@ -566,11 +601,6 @@ address {
   transform: translateY(0);
 }
 
-.project:hover {
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-}
-
 .project:active .project-overlay-text {
   transform: translateY(0);
 }
@@ -623,7 +653,10 @@ address {
   .project {
     width: calc((100% - 48px) / 3);
   }
-
+  .project:hover {
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+      0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  }
   .project-cards {
     width: 360px;
     height: 300px;
@@ -786,8 +819,7 @@ address {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-subscribe-button:hover,
-.footer-subscribe-button:focus {
+.footer-subscribe-button:active {
   background-color: #31d0aa;
 }
 
@@ -838,6 +870,40 @@ address {
 }
 
 @media only screen and (min-width: 1158px) {
+  .footer {
+    padding: 100px 0;
+  }
+
+  .footer .container {
+    display: flex;
+    align-items: baseline;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .footer-left-container {
+    width: 264px;
+    height: auto;
+    margin-right: 120px;
+  }
+
+  .footer-social-container {
+    margin-right: 80px;
+  }
+
+  .footer-social {
+    margin-bottom: 0;
+  }
+
+  .footer-form {
+    display: flex;
+    gap: 24px;
+  }
+
+  .footer-subscribe-button:hover,
+  .footer-subscribe-button:focus {
+    background-color: #31d0aa;
+  }
 }
 
 /* #endregion footer */
