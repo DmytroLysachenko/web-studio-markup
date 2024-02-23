@@ -18,12 +18,17 @@
     />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container">
         <nav class="nav-panel">
           <a href="./index.html" class="logo"
             >Web<span class="logo-1">Studio</span></a
           >
+          <button class="header-menu-button">
+            <svg width="24" height="24" class="header-menu-icon">
+              <use href="./images/icons.svg#icon-header-menu"></use>
+            </svg>
+          </button>
 
           <ul class="menu-nav">
             <li class="menu-nav-item">
@@ -41,20 +46,20 @@
         </nav>
         <address class="adress-list">
           <ul class="menu-address">
-            <li>
-              <a href="mailto:info@devstudio.com" class="contact-button"
+            <li class="contact-button">
+              <a href="mailto:info@devstudio.com" class="contact-link"
                 >info@devstudio.com</a
               >
             </li>
-            <li>
-              <a href="tel:+110001111111" class="contact-button"
+            <li class="contact-button">
+              <a href="tel:+110001111111" class="contact-link"
                 >+11 (000) 111-11-11</a
               >
             </li>
           </ul>
         </address>
       </div>
-    </header>-->
+    </header>
 
     <main>
       <section class="hero-section">
@@ -63,77 +68,77 @@
           <button type="button" class="order-button">Order Service</button>
         </div>
       </section>
-      <!-- 
-    <section class="section feature">
-      <div class="container">
-        <h2 class="visually-hidden">feature of WebStudio</h2>
-        <ul class="feature-list">
-          <li class="feature-item">
-            <div class="feature-icon">
-              <svg width="64" height="64">
-                <use href="./images/icons.svg#icon-antenna"></use>
-              </svg>
-            </div>
-            <h3 class="feature-title">Strategy</h3>
-            <p class="feature-text">
-              Our goal is to identify the business problem to walk away with the
-              perfect and creative solution.
-            </p>
-          </li>
 
-          <li class="feature-item">
-            <div class="feature-icon">
-              <svg width="64" height="64">
-                <use href="./images/icons.svg#icon-clock"></use>
-              </svg>
-            </div>
-            <h3 class="feature-title">Punctuality</h3>
-            <p class="feature-text">
-              Bring the key message to the brand's audience for the best price
-              within the shortest possible time.
-            </p>
-          </li>
+      <section class="section feature">
+        <div class="container">
+          <h2 class="visually-hidden">feature of WebStudio</h2>
+          <ul class="feature-list">
+            <li class="feature-item">
+              <div class="feature-icon">
+                <svg width="64" height="64">
+                  <use href="./images/icons.svg#icon-antenna"></use>
+                </svg>
+              </div>
+              <h3 class="feature-title">Strategy</h3>
+              <p class="feature-text">
+                Our goal is to identify the business problem to walk away with
+                the perfect and creative solution.
+              </p>
+            </li>
 
-          <li class="feature-item">
-            <div class="feature-icon">
-              <svg width="64" height="64">
-                <use href="./images/icons.svg#icon-diagram"></use>
-              </svg>
-            </div>
-            <h3 class="feature-title">Diligence</h3>
-            <p class="feature-text">
-              Research and confirm brands that present the strongest digital
-              growth opportunities and minimize risk.
-            </p>
-          </li>
+            <li class="feature-item">
+              <div class="feature-icon">
+                <svg width="64" height="64">
+                  <use href="./images/icons.svg#icon-clock"></use>
+                </svg>
+              </div>
+              <h3 class="feature-title">Punctuality</h3>
+              <p class="feature-text">
+                Bring the key message to the brand's audience for the best price
+                within the shortest possible time.
+              </p>
+            </li>
 
-          <li class="feature-item">
-            <div class="feature-icon">
-              <svg width="64" height="64">
-                <use href="./images/icons.svg#icon-astronaut"></use>
-              </svg>
-            </div>
-            <h3 class="feature-title">Technologies</h3>
-            <p class="feature-text">
-              Design practice focused on digital experiences. We bring forth a
-              deep passion for problem-solving.
-            </p>
-          </li>
-        </ul>
-      </div>
-    </section> -->
+            <li class="feature-item">
+              <div class="feature-icon">
+                <svg width="64" height="64">
+                  <use href="./images/icons.svg#icon-diagram"></use>
+                </svg>
+              </div>
+              <h3 class="feature-title">Diligence</h3>
+              <p class="feature-text">
+                Research and confirm brands that present the strongest digital
+                growth opportunities and minimize risk.
+              </p>
+            </li>
 
-      <!-- <section class="section team">
+            <li class="feature-item">
+              <div class="feature-icon">
+                <svg width="64" height="64">
+                  <use href="./images/icons.svg#icon-astronaut"></use>
+                </svg>
+              </div>
+              <h3 class="feature-title">Technologies</h3>
+              <p class="feature-text">
+                Design practice focused on digital experiences. We bring forth a
+                deep passion for problem-solving.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section team">
         <div class="container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
             <li class="team-member">
               <img
                 srcset="
-                  ./images/team-card-1.jpg   1x,
-                  ./images/team-card-1@2.jpg 2x
+                  ./images/team/team-card-1.jpg   1x,
+                  ./images/team/team-card-1@2.jpg 2x
                 "
-                src="./images/team-card-1.jpg"
+                src="./images/team/team-card-1.jpg"
                 alt="team-card-1"
               />
               <div class="team-member-description">
@@ -175,11 +180,11 @@
 
             <li class="team-member">
               <img
-                src="./images/team-card-2.jpg"
+                src="./images/team/team-card-2.jpg"
                 alt="team-card-2"
                 srcset="
-                  ./images/team-card-2.jpg   1x,
-                  ./images/team-card-2@2.jpg 2x
+                  ./images/team/team-card-2.jpg   1x,
+                  ./images/team/team-card-2@2.jpg 2x
                 "
               />
               <div class="team-member-description">
@@ -221,11 +226,11 @@
 
             <li class="team-member">
               <img
-                src="./images/team-card-3.jpg"
+                src="./images/team/team-card-3.jpg"
                 alt="team-card-3"
                 srcset="
-                  ./images/team-card-3.jpg   1x,
-                  ./images/team-card-3@2.jpg 2x
+                  ./images/team/team-card-3.jpg   1x,
+                  ./images/team/team-card-3@2.jpg 2x
                 "
               />
               <div class="team-member-description">
@@ -267,11 +272,11 @@
 
             <li class="team-member">
               <img
-                src="./images/team-card-4.jpg"
+                src="./images/team/team-card-4.jpg"
                 alt="team-card-4"
                 srcset="
-                  ./images/team-card-4.jpg   1x,
-                  ./images/team-card-4@2.jpg 2x
+                  ./images/team/team-card-4.jpg   1x,
+                  ./images/team/team-card-4@2.jpg 2x
                 "
               />
               <div class="team-member-description">
@@ -313,23 +318,41 @@
           </ul>
         </div>
       </section>
-      -->
 
-      <!-- <section class="section portfolio">
+      <section class="section portfolio">
         <div class="container">
           <h2 class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list">
             <li class="project">
               <div class="project-card-container">
-                <img
-                  class="project-cards"
-                  src="./images/project-card-1.jpg"
-                  alt="project-card-1"
-                  srcset="
-                    ./images/project-card-1.jpg   1x,
-                    ./images/project-card-1@2.jpg 2x
-                  "
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1168px)"
+                    srcset="
+                      ./images/projects/desc/project-card-1-desc.jpg   1x,
+                      ./images/projects/desc/project-card-1-desc@2.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/projects/tab/project-card-1-tab.jpg   1x,
+                      ./images/projects/tab/project-card-1-tab@2.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 320px)"
+                    srcset="
+                      ./images/projects/mob/project-card-1-mob.jpg   1x,
+                      ./images/projects/mob/project-card-1-mob@2.jpg 2x
+                    "
+                  />
+                  <img
+                    class="project-cards"
+                    src="./images/projects/mob/project-card-1-mob.jpg"
+                    alt="project-card-1"
+                  />
+                </picture>
 
                 <p class="project-overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -345,15 +368,34 @@
 
             <li class="project">
               <div class="project-card-container">
-                <img
-                  class="project-cards"
-                  src="./images/project-card-2.jpg"
-                  alt="project-card-2"
-                  srcset="
-                    ./images/project-card-2.jpg   1x,
-                    ./images/project-card-2@2.jpg 2x
-                  "
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1168px)"
+                    srcset="
+                      ./images/projects/desc/project-card-2-desc.jpg   1x,
+                      ./images/projects/desc/project-card-2-desc@2.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/projects/tab/project-card-2-tab.jpg   1x,
+                      ./images/projects/tab/project-card-2-tab@2.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 320px)"
+                    srcset="
+                      ./images/projects/mob/project-card-2-mob.jpg   1x,
+                      ./images/projects/mob/project-card-2-mob@2.jpg 2x
+                    "
+                  />
+                  <img
+                    class="project-cards"
+                    src="./images/projects/mob/project-card-2-mob.jpg"
+                    alt="project-card-2"
+                  />
+                </picture>
 
                 <p class="project-overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -369,15 +411,34 @@
 
             <li class="project">
               <div class="project-card-container">
-                <img
-                  class="project-cards"
-                  src="./images/project-card-3.jpg"
-                  alt="project-card-3"
-                  srcset="
-                    ./images/project-card-3.jpg   1x,
-                    ./images/project-card-3@2.jpg 2x
-                  "
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1168px)"
+                    srcset="
+                      ./images/projects/desc/project-card-3-desc.jpg   1x,
+                      ./images/projects/desc/project-card-3-desc@2.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/projects/tab/project-card-3-tab.jpg   1x,
+                      ./images/projects/tab/project-card-3-tab@2.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 320px)"
+                    srcset="
+                      ./images/projects/mob/project-card-3-mob.jpg   1x,
+                      ./images/projects/mob/project-card-3-mob@2.jpg 2x
+                    "
+                  />
+                  <img
+                    class="project-cards"
+                    src="./images/projects/mob/project-card-3-mob.jpg"
+                    alt="project-card-3"
+                  />
+                </picture>
 
                 <p class="project-overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -393,15 +454,34 @@
 
             <li class="project">
               <div class="project-card-container">
-                <img
-                  class="project-cards"
-                  src="./images/project-card-4.jpg"
-                  alt="project-card-4"
-                  srcset="
-                    ./images/project-card-4.jpg   1x,
-                    ./images/project-card-4@2.jpg 2x
-                  "
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1168px)"
+                    srcset="
+                      ./images/projects/desc/project-card-4-desc.jpg   1x,
+                      ./images/projects/desc/project-card-4-desc@2.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/projects/tab/project-card-4-tab.jpg   1x,
+                      ./images/projects/tab/project-card-4-tab@2.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 320px)"
+                    srcset="
+                      ./images/projects/mob/project-card-4-mob.jpg   1x,
+                      ./images/projects/mob/project-card-4-mob@2.jpg 2x
+                    "
+                  />
+                  <img
+                    class="project-cards"
+                    src="./images/projects/mob/project-card-4-mob.jpg"
+                    alt="project-card-4"
+                  />
+                </picture>
 
                 <p class="project-overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -417,15 +497,34 @@
 
             <li class="project">
               <div class="project-card-container">
-                <img
-                  class="project-cards"
-                  src="./images/project-card-5.jpg"
-                  alt="project-card-5"
-                  srcset="
-                    ./images/project-card-5.jpg   1x,
-                    ./images/project-card-5@2.jpg 2x
-                  "
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1168px)"
+                    srcset="
+                      ./images/projects/desc/project-card-5-desc.jpg   1x,
+                      ./images/projects/desc/project-card-5-desc@2.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/projects/tab/project-card-5-tab.jpg   1x,
+                      ./images/projects/tab/project-card-5-tab@2.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 320px)"
+                    srcset="
+                      ./images/projects/mob/project-card-5-mob.jpg   1x,
+                      ./images/projects/mob/project-card-5-mob@2.jpg 2x
+                    "
+                  />
+                  <img
+                    class="project-cards"
+                    src="./images/projects/mob/project-card-5-mob.jpg"
+                    alt="project-card-5"
+                  />
+                </picture>
 
                 <p class="project-overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -441,15 +540,34 @@
 
             <li class="project">
               <div class="project-card-container">
-                <img
-                  class="project-cards"
-                  src="./images/project-card-6.jpg"
-                  alt="project-card-6"
-                  srcset="
-                    ./images/project-card-6.jpg   1x,
-                    ./images/project-card-6@2.jpg 2x
-                  "
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1168px)"
+                    srcset="
+                      ./images/projects/desc/project-card-6-desc.jpg   1x,
+                      ./images/projects/desc/project-card-6-desc@2.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/projects/tab/project-card-6-tab.jpg   1x,
+                      ./images/projects/tab/project-card-6-tab@2.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 320px)"
+                    srcset="
+                      ./images/projects/mob/project-card-6-mob.jpg   1x,
+                      ./images/projects/mob/project-card-6-mob@2.jpg 2x
+                    "
+                  />
+                  <img
+                    class="project-cards"
+                    src="./images/projects/mob/project-card-6-mob.jpg"
+                    alt="project-card-6"
+                  />
+                </picture>
 
                 <p class="project-overlay-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -464,10 +582,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
 
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container">
         <div class="footer-left-container">
           <a href="./index.html" class="logo-footer">
@@ -533,9 +651,9 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
-    <!-- <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal">
         <button type="button" class="modal-close-btn">
           <svg class="modal-close-icon" width="8" height="8">
@@ -613,13 +731,86 @@
                   <use href="./images/icons.svg#icon-tick"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a href="" class="modal-privacy-link">Privacy Policy</a>
+              <div class="modal-privacy-text">
+                I accept the terms and conditions of the<a
+                  href=""
+                  class="modal-privacy-link"
+                >
+                  Privacy Policy</a
+                >
+              </div>
             </label>
           </div>
           <button class="modal-submit-button" type="submit">Send</button>
         </form>
       </div>
-    </div> -->
+    </div>
+
+    <div class="mobile-menu-modal mobile-open">
+      <div class="mobile-menu-container">
+        <button type="button" class="mobile-menu-close-btn">
+          <svg class="modal-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-modal-close"></use>
+          </svg>
+        </button>
+        <ul class="mobile-menu-list">
+          <li class="mobile-menu-item">
+            <a href="" class="mobile-menu-link">Studio</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a href="" class="mobile-menu-link">Portfolio</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a href="" class="mobile-menu-link">Contacts</a>
+          </li>
+        </ul>
+        <ul class="mobile-menu-adress-list">
+          <li class="mobile-menu-adress-item">
+            <a href="tel:+110001111111" class="mobile-menu-adress-link"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li class="mobile-menu-adress-item">
+            <a href="mailto:info@devstudio.com" class="mobile-menu-adress-link"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <div class="mobile-social-container">
+          <p class="social-text">Social media</p>
+          <ul class="mobile-social">
+            <li class="social-item">
+              <a class="social-link-mobile" href="">
+                <svg width="24" height="24" class="social-icon-mobile">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="social-item">
+              <a class="social-link-mobile" href="">
+                <svg width="24" height="24" class="social-icon-mobile">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-link-mobile" href="">
+                <svg width="24" height="24" class="social-icon-mobile">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="social-link-mobile" href="">
+                <svg width="24" height="24" class="social-icon-mobile">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
