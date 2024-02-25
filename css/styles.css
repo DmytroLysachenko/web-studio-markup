@@ -243,10 +243,6 @@ address,
 }
 
 @media only screen and (min-width: 1158px) {
-  .header {
-    padding: 0 140px;
-  }
-
   .header .container {
     max-width: 1440px;
   }
@@ -943,9 +939,8 @@ address,
   }
 
   .footer .container {
-    padding-left: 0;
-    padding-right: 0;
     gap: unset;
+    padding: 0 15px;
   }
 
   .footer-left-container {
